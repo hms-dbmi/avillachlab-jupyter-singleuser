@@ -1,0 +1,12 @@
+Jupyter Single User Base Image With Notebook
+--------------------------------------------
+
+This folder contains everything that needs to be modified for your
+research.
+
+Dependencies can be added to the dependencies.r and dependencies2.r files.
+
+There are two files because sometimes a dependency may fail to install if
+it tries to run in the same script that its dependencies are installed from.
+
+The example Jupyter

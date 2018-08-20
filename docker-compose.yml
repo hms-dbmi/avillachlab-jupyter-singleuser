@@ -1,0 +1,23 @@
+version: '3.3'
+services:
+
+  jupyter-notebook:
+    build: ./jupyter
+    image: dbmi/r-datascience-notebook:for-local-development
+    restart: always
+    environment:
+      - GRANT_SUDO=yes
+    networks:
+      - public
+    expose:
+      - 8888
+    ports:
+      - 81:8888
+    volumes:
+      - ./jupyter-notebooks:/home/jovyan/work
+
+networks:
+  public:
+
+
+
